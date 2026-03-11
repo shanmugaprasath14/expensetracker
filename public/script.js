@@ -417,7 +417,7 @@ function updateMonthlyBarChart(data) {
             responsive: true,
             maintainAspectRatio: false,
             plugins: { legend: { display: false } },
-            scales: { y: { beginAtZero: true, ticks: { callback: (value) => '$' + value } } }
+            scales: { y: { beginAtZero: true, ticks: { callback: (value) => '₹' + value } } }
         }
     });
 }
@@ -700,7 +700,7 @@ function updateAnalyticsBarChart(data) {
             responsive: true,
             maintainAspectRatio: false,
             plugins: { legend: { display: false } },
-            scales: { y: { beginAtZero: true, ticks: { callback: (value) => '$' + value } } }
+            scales: { y: { beginAtZero: true, ticks: { callback: (value) => '₹' + value } } }
         }
     });
 }
@@ -742,7 +742,7 @@ function updateAverageStats(categoryData, monthlyData) {
 
 // ==================== Utility Functions ====================
 function formatCurrency(amount) {
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(amount || 0);
+    return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(amount || 0);
 }
 
 function formatDate(dateString) {
