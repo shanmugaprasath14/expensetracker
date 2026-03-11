@@ -1,0 +1,25 @@
+{
+    "name": "expense-tracker",
+    "version": "1.0.0",
+    "description": "A complete expense tracker web application with Node.js, Express, MongoDB, and Chart.js",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "keywords": [
+        "expense",
+        "tracker",
+        "finance",
+        "mongodb",
+        "express"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "mongoose": "^8.0.3"
+    }
+}
